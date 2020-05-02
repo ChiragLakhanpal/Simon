@@ -53,14 +53,14 @@ function checkAnswer() {
   }
   if (userPattern.length === gamePattern.length) {
     userPattern = [];
-    setTimeout(nextSequence, 1000);
+    setTimeout(nextSequence, 100);
     level++;
   }
 }
 
 $(document).keypress(function() {
   if (!started) {
-    setTimeout(nextSequence, 400);
+    setTimeout(nextSequence, 100);
     started = true;
   }
 });
